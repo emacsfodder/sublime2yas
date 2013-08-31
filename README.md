@@ -12,7 +12,7 @@ a lot of snippets I want to harvest from it and bring into Emacs, and
 I'll be hornswoggled if I'm going to do that mucky business by hand.
 
 So instead here's a script which will take care of it, with a few
-extra bells and whistles for good measure.
+extra bells and whistles thrown in for good measure.
 
 ### Usage
 
