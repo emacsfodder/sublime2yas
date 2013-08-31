@@ -274,7 +274,7 @@ class SublimeSnippet
     doc = "# -*- mode: snippet -*-\n"
     doc << "# contributor: Translated to yasnippet by sublime-snippet import\n"
     doc << (self.type || "")
-    doc << "# uuid: #{self.uuid}\n"
+    # doc << "# uuid: #{self.uuid}\n" unless self.uuid.empty?
     doc << "# key: #{self.key}\n" if self.key
     doc << "# group: #{opts.snippet_group}\n" if opts.snippet_group
     doc << "# name: #{self.name}\n"
@@ -353,7 +353,12 @@ end
 
 if __FILE__ == $PROGRAM_NAME
 
-  modename = opts.major_mode or File.basename opts.output_dir or "major-mode-name"
+  modename = if opts.major_mode
+               opts.major_mode
+             else
+               File.basename opts.output_dir
+             end
+  
   original_dir = Dir.pwd
 
   if opts.parent_modes
