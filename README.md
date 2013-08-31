@@ -28,6 +28,13 @@ For help run `sublime2yas --help` from the command line on  a single folder of S
 
     sublime2yas -d SublimeSnippetsFolder -o YasnippetsFolder
 
+Process one folder at a time, if you want to process a whole tree of
+folders, you'll have to walk them using `find` or another weapon of choice.
+
+I'd recommend you convert a folder at a time, not for any technical
+reason, but simply so that you can learn and use the snippets you're
+importing.
+
 ### Options
 
     Options:
