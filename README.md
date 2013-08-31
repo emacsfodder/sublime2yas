@@ -1,6 +1,6 @@
 # Sublime2yas
 
-##### SublimeText to YaSnippet conversion
+##### SublimeText to YaSnippet / Emacs conversion
 
 This is a script based on the old TextMate import script that
 ship(ped) with YASnippet for Emacs.
