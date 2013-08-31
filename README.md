@@ -39,16 +39,16 @@ is generated in the `--output-dir` as `QUICKREF.md`. [See this example](https://
 
     git clone https://github.com/jasonm23/sublime-snippet-import.git
     cd sublime-snippet-import
-    cp sublime-snippet-import.rb /usr/local/bin/sublime-snippet-import
+    install.sh
 
-Assumes that `/usr/local/bin` is user writable. You can put it
-anywhere your execution path will find it.
+Install will copy the script to `/usr/local/bin`. If you want to install 
+it manually, just place it somewhere in your path.
 
-<sup>FYI I'll probably package this up into a gem, in a few days.</sup>
+<sup>FYI I'll package this up into a gem, in a few days.</sup>
 
 ### Removal
 
-run `rm /usr/local/bin/sublime-snippet-import`
+run `uninstall.sh` from the `sublime-snippet-import` directory. 
 
 ### Dependencies
 
