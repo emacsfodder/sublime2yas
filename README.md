@@ -42,7 +42,8 @@ is generated in the `--output-dir` as `QUICKREF.md`. [See this example](https://
     install.sh
 
 Install will copy the script to `/usr/local/bin`. If you want to install 
-it manually, just place it somewhere in your path.
+it manually, just place it somewhere in your path, and install the Nokogiri and
+Trollop gems.
 
 <sup>FYI I'll package this up into a gem, in a few days.</sup>
 
