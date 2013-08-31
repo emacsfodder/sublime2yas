@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm /usr/local/bin/sublime-snippet-import
+rm /usr/local/bin/sublime2yas
 
-echo "Uninstalled sublime-snippet-import"
+echo "Uninstalled sublime2yas"

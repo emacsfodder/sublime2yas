@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
-# sublie_snippet_import.rb --- import sublime snippets
+# sublime2yas.rb --- convert Sublime Text Snippets to YASnippet 
 #
 # generate YASnippets from Sublime Text Snippets.
-# Use sublime_snippet_import).rb --help to get usage information.
+# Use sublime2yas --help to get usage information.
 #
 # Copyright ©2013 Jason Milkins
 # based on original work Copyright ©2009 Rob Christie, ©2010 João Távora

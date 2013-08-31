@@ -2,12 +2,12 @@
 
 gem install nokogiri
 gem install trollop
-cp sublime-snippet-import.rb /usr/local/bin/sublime-snippet-import
+cp sublime2yas.rb /usr/local/bin/sublime2yas
 
 echo "Installed
 
 for more info use:
 
-   sublime-snippet-import --help
+   sublime2yas --help
 
 "

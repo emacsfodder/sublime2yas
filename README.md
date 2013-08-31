@@ -1,4 +1,6 @@
-# Sublime snippet import - for yasnippet
+# Sublime2Yas
+
+##### SublimeText to YaSnippet conversion
 
 This is a script based on the old TextMate import script that
 ship(ped) with YASnippet for Emacs.
@@ -37,8 +39,8 @@ is generated in the `--output-dir` as `QUICKREF.md`. [See this example](https://
 
 ### Installation
 
-    git clone https://github.com/jasonm23/sublime-snippet-import.git
-    cd sublime-snippet-import
+    git clone https://github.com/jasonm23/sublime2yas.git
+    cd sublime2yas
     install.sh
 
 Install will copy the script to `/usr/local/bin`. If you want to install 
@@ -49,7 +51,7 @@ Trollop gems.
 
 ### Removal
 
-run `uninstall.sh` from the `sublime-snippet-import` directory. 
+run `uninstall.sh` from the `sublime2yas` directory. 
 
 ### Dependencies
 
