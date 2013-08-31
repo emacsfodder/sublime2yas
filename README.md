@@ -1,4 +1,4 @@
-# Sublime2Yas
+# Sublime2yas
 
 ##### SublimeText to YaSnippet conversion
 
@@ -14,7 +14,27 @@ I'll be hornswoggled if I'm going to do that mucky business by hand.
 So instead here's a script which will take care of it, with a few
 extra bells and whistles thrown in for good measure.
 
-### Usage
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'sublime2yas'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install sublime2yas
+
+## Usage
+
+For help run from the command line on  a single folder of SublimeText Snippets.
+
+    sublime2yas -d SublimeSnippetsFolder -o YasnippetsFolder
+
+### Additional Options
 
     Options:
         --snippet-dir, -d <s>:   Sublime-snippet directory
@@ -37,22 +57,10 @@ extra bells and whistles thrown in for good measure.
 When using the `--doc` or `-c` option a quick reference / cheatsheet
 is generated in the `--output-dir` as `QUICKREF.md`. [See this example](https://gist.github.com/jasonm23/6396154)
 
-### Installation
+## Contributing
 
-    git clone https://github.com/jasonm23/sublime2yas.git
-    cd sublime2yas
-    install.sh
-
-Install will copy the script to `/usr/local/bin`. If you want to install 
-it manually, just place it somewhere in your path, and install the Nokogiri and
-Trollop gems.
-
-<sup>FYI I'll package this up into a gem, very soon.</sup>
-
-### Removal
-
-run `uninstall.sh` from the `sublime2yas` directory. 
-
-### Dependencies
-
-Ruby 1.8.7 and up.  Nokogiri and Trollop gems will be installed.
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
