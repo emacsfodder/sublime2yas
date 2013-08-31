@@ -48,7 +48,7 @@ anywhere your execution path will find it.
 
 ### Removal
 
-Just run `sudo rm /usr/local/bin/` 
+run `rm /usr/local/bin/sublime-snippet-import`
 
 ### Dependencies
 
