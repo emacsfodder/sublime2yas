@@ -29,6 +29,12 @@ extra bells and whistles for good measure.
                                  --output-dir as QUICKREF.md
                    --help, -h:   Show this message
 
+
+### Auto Quickref
+
+When using the `--doc` or `-c` option a quick reference / cheatsheet
+is generated in the `--output-dir` as `QUICKREF.md`. [See this example](https://gist.github.com/jasonm23/6396154)
+
 ### Installation
 
     git clone https://github.com/jasonm23/sublime-snippet-import.git
@@ -38,7 +44,7 @@ extra bells and whistles for good measure.
 Assumes that `/usr/local/bin` is user writable. You can put it
 anywhere your execution path will find it.
 
-<sup>I will probably package this up into a gem, this is just to get it out there.</sup>
+<sup>FYI I'll probably package this up into a gem, in a few days.</sup>
 
 ### Removal
 
