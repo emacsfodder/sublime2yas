@@ -52,4 +52,4 @@ run `uninstall.sh` from the `sublime-snippet-import` directory.
 
 ### Dependencies
 
-Ruby 1.8.7 and up Nokogiri and Trollop gems will be installed.
+Ruby 1.8.7 and up.  Nokogiri and Trollop gems will be installed.
