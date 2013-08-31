@@ -58,7 +58,7 @@ Trollop::die :output_dir, "must be provided" unless opts.output_dir
 Trollop::die :output_dir, "must exist" unless File.directory? opts.output_dir
 
 if __FILE__ == $PROGRAM_NAME
-
+ 
   modename = if opts.major_mode
                opts.major_mode
              else
@@ -100,7 +100,7 @@ if __FILE__ == $PROGRAM_NAME
       lookfor.gsub!(/^[ ]*/, "")
       lookfor.gsub!(/[ ]*$/, "")
       unless !directive or replacewith =~ /yas-unknown/ then
-        SublimeSnippet.extra_substitutions[directive][lookfor] = replacewith
+        Sublime2yas::SublimeSnippet.extra_substitutions[directive][lookfor] = replacewith
       end
     end
   end
@@ -112,7 +112,7 @@ if __FILE__ == $PROGRAM_NAME
   snippet_files.each do |file|
     begin
       $stdout.print "Processing \"#{File.join(opts.snippet_dir,file)}\"..." unless opts.quiet
-      snippet = SublimeSnippet.new(file)
+      snippet = Sublime2yas::SublimeSnippet.new(file)
       file_to_create = File.join(original_dir, opts.output_dir, snippet.yas_file)
       FileUtils.mkdir_p(File.dirname(file_to_create))
       File.open(file_to_create, 'w') do |f|
@@ -122,7 +122,7 @@ if __FILE__ == $PROGRAM_NAME
       snippet_doc << {keys: snippet.key, name: snippet.name} if opts.doc
 
       $stdout.print "done\n" unless opts.quiet
-    rescue SkipSnippet => e
+    rescue Sublime2yas::SkipSnippet => e
       $stdout.print "skipped! #{e.message}\n" unless opts.quiet
     rescue RuntimeError => e
       $stderr.print "failed! #{e.message}\n"
