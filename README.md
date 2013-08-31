@@ -16,25 +16,19 @@ extra bells and whistles thrown in for good measure.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+    gem install sublime2yas
 
-    gem 'sublime2yas'
+## Uninstall
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sublime2yas
+    gem uninstall sublime2yas
 
 ## Usage
 
-For help run from the command line on  a single folder of SublimeText Snippets.
+For help run `sublime2yas --help` from the command line on  a single folder of SublimeText Snippets.
 
     sublime2yas -d SublimeSnippetsFolder -o YasnippetsFolder
 
-### Additional Options
+### Options
 
     Options:
         --snippet-dir, -d <s>:   Sublime-snippet directory
